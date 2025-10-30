@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emirhan Halil Karakuş | Full-Stack Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Boxicons Kütüphanesi -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#home" class="logo">Emirhan</a>
+    
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <nav class="nav-links">
+      <a href="#home" class="active">Ana Sayfa</a>
+      <a href="#skills">Yetenekler</a>
+      <a href="#projects">Projeler</a>
+      <a href="#">Ürünler</a>
+      <a href="#contact">İletişim</a>
+      <a href="#" class="login-btn disabled">Login</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero container">
+    <div class="hero-text">
+      <h1>Emirhan Halil Karakuş</h1>
+      <p class="subtitle">
+        Full-Stack Web Developer. Laravel, Vue.js ve modern web teknolojileriyle kullanıcı odaklı, performanslı ve estetik uygulamalar geliştiriyorum. İş birliği için iletişime geçin.
+      </p>
+      <a href="#contact" class="cta-button">Benimle İletişime Geç</a>
+    </div>
+    <img src="https://scontent.ftzx1-2.fna.fbcdn.net/v/t39.30808-1/549015959_1780682682563977_1905055946731019802_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_ohc=pieIUSctkloQ7kNvwEsvW-y&_nc_oc=AdnbgZY4GWtVAyI1byM4ntej50qxhwUzSxr7bmjb3W6VFQqYDAmNyVWNgWz8MZZuqgc&_nc_zt=24&_nc_ht=scontent.ftzx1-2.fna&_nc_gid=B21_rntGYiMNRfFFZEhzVQ&oh=00_AfeFS3zCX6u8sFNBciPF9572BPdd7h7yNLLwa7i3dSzqBA&oe=690908AD" alt="Profil Fotoğrafı" class="hero-avatar">
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Yeteneklerim</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <div class="skill-info"><span>Laravel</span><span>90%</span></div>
+          <div class="skill-bar-container"><div class="skill-bar" data-level="90%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-info"><span>Vue.js</span><span>85%</span></div>
+          <div class="skill-bar-container"><div class="skill-bar" data-level="85%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-info"><span>JavaScript</span><span>80%</span></div>
+          <div class="skill-bar-container"><div class="skill-bar" data-level="80%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-info"><span>HTML5 & CSS3</span><span>95%</span></div>
+          <div class="skill-bar-container"><div class="skill-bar" data-level="95%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projelerim</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Proje 1: E-Ticaret Platformu</h3>
+          <p>Laravel ve Vue.js kullanarak geliştirdiğim, modern ve hızlı bir e-ticaret sitesi. Yönetim paneli, ürün ve sipariş takibi gibi özellikler içerir.</p>
+        </div>
+        <div class="project-card">
+          <h3>Proje 2: Blog Yönetim Sistemi</h3>
+          <p>İçerik üreticileri için tasarlanmış, SEO dostu ve minimalist bir blog altyapısı. Tamamen dinamik ve yönetilebilir.</p>
+        </div>
+        <div class="project-card">
+          <h3>Proje 3: Kurumsal Web Sitesi</h3>
+          <p>Modern animasyonlar ve responsive tasarıma sahip, bir ajans için hazırladığım kurumsal kimlik sitesi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">İletişim</h2>
+      <form action="https://formspree.io/f/mdkwgqvp" method="POST" class="contact-form">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Adınız" required>
+          <input type="email" name="email" placeholder="E-posta Adresiniz" required>
+        </div>
+        <textarea name="message" placeholder="Mesajınız" required></textarea>
+        <button type="submit" class="cta-button">Gönder</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="social-links">
+      <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+      <a href="#"><i class='bx bxl-github'></i></a>
+      <a href="https://www.instagram.com/emirhann_karakuss/"><i class='bx bxl-instagram'></i></a>
+    </div>
+    <p>&copy; 2024 Emirhan Halil Karakuş. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script src="java.js"></script>
+</body>
+</html>
