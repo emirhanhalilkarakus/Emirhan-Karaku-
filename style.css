@@ -405,10 +405,12 @@ body.light-mode {
   color: var(--main-color);
   border: 1.5px solid var(--border-color);
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 8px 16px;
   font-size: 1.2rem;
   cursor: pointer;
   transition: all .2s;
+  margin-left: 15px;
+  z-index: 1100;
 }
 body.dark-mode #toggleMode {
   color: #fafafa;
@@ -417,4 +419,15 @@ body.dark-mode #toggleMode {
 #toggleMode:hover {
   transform: scale(1.06);
   border-color: var(--main-color);
+}
+
+@media (max-width: 600px) {
+  #toggleMode {
+    position: fixed;
+    top: 18px;
+    right: 16px;
+    margin-left: 0;
+    font-size: 1.3rem;
+    padding: 7px 12px;
+  }
 }

@@ -91,9 +91,9 @@ window.onscroll = () => {
 const toggleBtn = document.getElementById('toggleMode');
 function updateThemeIcon(){
     if(document.body.classList.contains('light-mode')) {
-        toggleBtn.textContent = '🌙'; // Şu an gündüz modunda, tıklarsan karanlık olur
+        toggleBtn.textContent = '🌙'; // Gündüz modunda, tıklarsan gece
     } else {
-        toggleBtn.textContent = '☀️';
+        toggleBtn.textContent = '☀️'; // Gece modunda, tıklarsan gündüz
     }
 }
 toggleBtn.addEventListener('click', function() {
@@ -105,7 +105,7 @@ toggleBtn.addEventListener('click', function() {
     }
     updateThemeIcon();
 });
-// Site açıldığında eski tercihi kontrol et
+// Sayfa açılışında eski tercih yükle
 if(localStorage.getItem('site-mode') === 'light') {
     document.body.classList.add('light-mode');
 }
