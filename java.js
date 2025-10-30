@@ -86,3 +86,27 @@ window.onscroll = () => {
     menuIcon.classList.remove('bx-x');
     navLinks.classList.remove('active');
 };
+
+// --- Dark/Light Mode Toggle ---
+const toggleBtn = document.getElementById('toggleMode');
+function updateThemeIcon(){
+    if(document.body.classList.contains('light-mode')) {
+        toggleBtn.textContent = '🌙'; // Şu an gündüz modunda, tıklarsan karanlık olur
+    } else {
+        toggleBtn.textContent = '☀️';
+    }
+}
+toggleBtn.addEventListener('click', function() {
+    document.body.classList.toggle('light-mode');
+    if(document.body.classList.contains('light-mode')) {
+        localStorage.setItem('site-mode', 'light');
+    } else {
+        localStorage.setItem('site-mode', 'dark');
+    }
+    updateThemeIcon();
+});
+// Site açıldığında eski tercihi kontrol et
+if(localStorage.getItem('site-mode') === 'light') {
+    document.body.classList.add('light-mode');
+}
+updateThemeIcon();
