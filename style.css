@@ -122,6 +122,38 @@ body {
     display: none;
 }
 
+.cart-btn {
+    margin-left: 25px;
+    padding: 8px 20px;
+    background-image: linear-gradient(to right, var(--main-color), var(--secondary-accent));
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.cart-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--secondary-accent);
+}
+.cart-btn.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-image: none;
+  background: #374151;
+  color: #fff !important;
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 8px 18px;
+  margin-left: 18px;
+  border: none;
+  text-decoration: none;
+  pointer-events: none;
+}
+.cart-btn::after {
+    display: none;
+}
+
 /* Hero Section */
 .hero {
   position: relative;
