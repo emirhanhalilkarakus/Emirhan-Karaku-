@@ -10,6 +10,8 @@
 </head>
 <body>
 
+  <div class="bg-grid"></div>
+
   <header class="navbar">
     <a href="#home" class="logo">Emirhan</a>
     
@@ -17,24 +19,68 @@
 
     <nav class="nav-links">
       <a href="#home" class="active">Ana Sayfa</a>
+      <a href="#about">Hakkımda</a>
       <a href="#skills">Yetenekler</a>
+      <a href="#experience">Deneyim</a>
       <a href="#projects">Projeler</a>
-      <a href="#">Ürünler</a>
+      <a href="#blog">Blog</a>
+      <a href="#testimonials">Referanslar</a>
       <a href="#contact">İletişim</a>
-      <a href="#" class="cart-btn disabled"><i class='bx bx-cart'></i> Sepet</a>
-      <a href="#" class="login-btn disabled">Login</a>
+      <a href="#contact" class="cart-btn">Proje Başlat</a>
+      <a href="mailto:emirhannkarakus@gmail.com" class="login-btn">CV Al</a>
     </nav>
   </header>
 
   <section id="home" class="hero container">
     <div class="hero-text">
+      <div class="hero-badge">🚀 Full-Stack Developer · Laravel & Vue</div>
       <h1>Emirhan Halil Karakuş</h1>
       <p class="subtitle">
         Full-Stack Web Developer. Laravel, Vue.js ve modern web teknolojileriyle kullanıcı odaklı, performanslı ve estetik uygulamalar geliştiriyorum. İş birliği için iletişime geçin.
       </p>
-      <a href="#contact" class="cta-button">Benimle İletişime Geç</a>
+      <div class="hero-actions">
+        <a href="#contact" class="cta-button">Benimle İletişime Geç</a>
+        <a href="#projects" class="ghost-button">Projeleri Gör</a>
+      </div>
+      <div class="hero-meta">
+        <span><i class='bx bx-map'></i> Türkiye · Remote</span>
+        <span><i class='bx bx-time-five'></i> 3+ yıl deneyim</span>
+        <span><i class='bx bx-rocket'></i> Performans & SEO odaklı</span>
+      </div>
     </div>
     <img src="https://scontent.ftzx1-1.fna.fbcdn.net/v/t51.75761-15/484342624_18349536685194822_4982303842821136146_n.jpg?_nc_cat=102&_nc_cb=99be929b-f3b7c874&ccb=1-7&_nc_sid=127cfc&_nc_ohc=oC5lZj-m6jkQ7kNvwE_UbHI&_nc_oc=AdlwfWISN0BzGAR1QxbpVT3053F3LGrDQV5ymr7X0b3cMr4nwf9KU0LpbvCMYXFQMc4&_nc_zt=23&_nc_ht=scontent.ftzx1-1.fna&_nc_gid=gpoPsSebZPNpDKpFPElYaQ&oh=00_AfmEiwzOFld0EaLf4oleNS6NJ9YAY2BmX-MgpdiW__4y-w&oe=6941E89C" alt="Profil Fotoğrafı" class="hero-avatar">
+  </section>
+
+  <section id="about" class="section">
+    <div class="container about">
+      <div class="about-text">
+        <h2 class="section-title">Hakkımda</h2>
+        <p>Laravel backend uzmanlığı ile Vue.js/SPA deneyimini birleştiriyor, performansı ölçülebilir metriklerle takip ediyorum. Temiz kod, test ve sürdürülebilir mimari önceliklerim.</p>
+        <div class="about-highlights">
+          <div class="highlight"><i class='bx bx-check-shield'></i> Güvenli API tasarımı</div>
+          <div class="highlight"><i class='bx bx-pulse'></i> Lighthouse 90+ skor hedefi</div>
+          <div class="highlight"><i class='bx bx-rocket'></i> CI/CD & bulut dağıtım</div>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number" data-target="18">0</div>
+          <p>Tamamlanan proje</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="12">0</div>
+          <p>Kurumsal müşteri</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="98">0</div>
+          <p>Müşteri memnuniyet</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="5">0</div>
+          <p>Devam eden proje</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="skills" class="section">
@@ -61,6 +107,66 @@
     </div>
   </section>
 
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title">Neler Sunuyorum?</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <i class='bx bx-code-curly'></i>
+          <h3>Ölçeklenebilir Backend</h3>
+          <p>Laravel ile REST/GraphQL API, queue, caching ve çok katmanlı mimari.</p>
+        </div>
+        <div class="service-card">
+          <i class='bx bx-window-alt'></i>
+          <h3>Modern Frontend</h3>
+          <p>Vue 3 + Vite/SSR, component kütüphaneleri, yeniden kullanılabilir UI mimarisi.</p>
+        </div>
+        <div class="service-card">
+          <i class='bx bx-line-chart'></i>
+          <h3>Performans & SEO</h3>
+          <p>Lighthouse optimizasyonu, Core Web Vitals, schema markup ve teknik SEO.</p>
+        </div>
+        <div class="service-card">
+          <i class='bx bx-lock-alt'></i>
+          <h3>Güvenlik & DevOps</h3>
+          <p>JWT/OAuth, rate-limit, CI/CD, Docker, bulut dağıtım ve gözlemlenebilirlik.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Deneyim & Yolculuk</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div class="content">
+            <p class="time">2023 - Güncel</p>
+            <h3>Kıdemli Full-Stack · Freelance</h3>
+            <p>Laravel + Vue ile SaaS, e-ticaret ve CRM projelerinde ölçeklenebilir mimari, caching ve CI/CD kurulumları.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div class="content">
+            <p class="time">2021 - 2023</p>
+            <h3>Backend Developer · Ajans</h3>
+            <p>Kurumsal siteler, headless CMS ve çok dilli içerik yönetimi. Test ve code-review süreçleriyle kaliteyi artırdım.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div class="content">
+            <p class="time">2019 - 2021</p>
+            <h3>Frontend Geliştirici</h3>
+            <p>SPA, animasyon, erişilebilirlik ve performans optimizasyonu odaklı Vue/JS projeleri.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="projects" class="section">
     <div class="container">
       <h2 class="section-title">Projelerim</h2>
@@ -81,6 +187,78 @@
     </div>
   </section>
 
+  <section id="blog" class="section">
+    <div class="container">
+      <h2 class="section-title">Blog & Paylaşımlar</h2>
+      <div class="blog-grid">
+        <article class="blog-card">
+          <div class="badge">Laravel</div>
+          <h3>Laravel'de Çok Kiracılı (Multi-Tenant) Mimari</h3>
+          <p>Tenancy paketleri, veritabanı ayrıştırma stratejileri ve performans notları.</p>
+          <div class="blog-meta"><i class='bx bx-time'></i> 6 dk · 2025</div>
+        </article>
+        <article class="blog-card">
+          <div class="badge">Vue 3</div>
+          <h3>Composable Mimarisi ile Temiz Frontend</h3>
+          <p>Pinia, reusable composable'lar ve tip güvenli store tasarımı örnekleri.</p>
+          <div class="blog-meta"><i class='bx bx-time'></i> 4 dk · 2025</div>
+        </article>
+        <article class="blog-card">
+          <div class="badge">DevOps</div>
+          <h3>CI/CD Pipeline'larında Güvenlik Katmanı</h3>
+          <p>Secrets yönetimi, otomatik test, SAST/DAST ve deploy sonrası gözlem.</p>
+          <div class="blog-meta"><i class='bx bx-time'></i> 7 dk · 2025</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="section">
+    <div class="container">
+      <h2 class="section-title">Referanslar</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="quote">“</div>
+          <p>“E-ticaret projemizde performans %40 arttı, Lighthouse skorlarımız 95+ oldu.”</p>
+          <div class="author">
+            <span class="name">Mert Yılmaz</span>
+            <span class="role">CTO, Shoply</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="quote">“</div>
+          <p>“API mimarisi ve dokümantasyon mükemmel; entegrasyon süremiz yarıya indi.”</p>
+          <div class="author">
+            <span class="name">Selin Aksoy</span>
+            <span class="role">Product Manager, Finpay</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="quote">“</div>
+          <p>“DevOps ve otomasyon önerileriyle teslimatlar çok daha güvenli ve hızlı.”</p>
+          <div class="author">
+            <span class="name">Ahmet Demir</span>
+            <span class="role">Founder, SaaSly</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner section">
+    <div class="container cta-content">
+      <div>
+        <p class="eyebrow">Hazır mısın?</p>
+        <h2>Birlikte sonraki ürünü hızla hayata geçirelim.</h2>
+        <p class="cta-sub">Planlama, mimari, geliştirme ve yayında ölçümleme için uçtan uca destek.</p>
+      </div>
+      <div class="cta-buttons">
+        <a href="tel:+905555555555" class="cta-button">Hemen Ara</a>
+        <a href="mailto:emirhannkarakus@gmail.com" class="ghost-button">Toplantı Planla</a>
+      </div>
+    </div>
+  </section>
+
   <section id="contact" class="section">
     <div class="container">
       <h2 class="section-title">İletişim</h2>
@@ -92,6 +270,10 @@
         <textarea name="message" placeholder="Mesajınız" required></textarea>
         <button type="submit" class="cta-button">Gönder</button>
       </form>
+      <div class="contact-extra">
+        <p><i class='bx bx-mail-send'></i> emirhannkarakus@gmail.com</p>
+        <p><i class='bx bx-phone'></i> +90 555 555 55 55</p>
+      </div>
     </div>
   </section>
 
@@ -104,6 +286,7 @@
     <p>&copy; 2025 Emirhan Halil Karakuş. Tüm hakları saklıdır.</p>
   </footer>
 
+  <a class="floating-call" href="tel:+905555555555"><i class='bx bx-phone'></i> Hemen Ara</a>
   <script src="java.js"></script>
 </body>
 </html>

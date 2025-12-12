@@ -63,6 +63,8 @@ projectCards.forEach(card => {
 // --- Aktif Navbar Linkini Belirleme ve Mobil Menüyü Kapatma ---
 const navLinksAll = document.querySelectorAll('.nav-links a');
 const allSections = document.querySelectorAll('section');
+const statNumbers = document.querySelectorAll('.stat-number');
+let statsAnimated = false;
 
 window.onscroll = () => {
     allSections.forEach(sec => {
@@ -86,3 +88,35 @@ window.onscroll = () => {
     menuIcon.classList.remove('bx-x');
     navLinks.classList.remove('active');
 };
+
+// --- İstatistik Sayacı ---
+const animateStats = () => {
+    if (statsAnimated) return;
+    statNumbers.forEach(num => {
+        const target = parseInt(num.getAttribute('data-target'), 10);
+        let current = 0;
+        const step = Math.max(1, Math.floor(target / 80));
+        const interval = setInterval(() => {
+            current += step;
+            if (current >= target) {
+                current = target;
+                clearInterval(interval);
+            }
+            num.textContent = current;
+        }, 15);
+    });
+    statsAnimated = true;
+};
+
+const aboutSection = document.getElementById('about');
+if (aboutSection) {
+    const aboutObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateStats();
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.3 });
+    aboutObserver.observe(aboutSection);
+}
